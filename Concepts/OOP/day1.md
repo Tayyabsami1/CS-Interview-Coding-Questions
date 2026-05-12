@@ -17,6 +17,18 @@
   - Multilevel inheritance: parent inherits from another parent.
   - Hierarchical inheritance: multiple classes inherit from one parent.
 
+- ENCAPSULATION
+  → Protects data inside BankAccount (balance, pin are private)
+  ↓
+- ABSTRACTION
+  → Hides HOW deposit/withdraw works internally via abstract class
+  ↓
+- INHERITANCE
+  → SavingsAccount, CurrentAccount reuse BankAccount's common code
+  ↓
+- POLYMORPHISM
+  → processDeposit() works on any account type via base pointer
+
 ## Relationships
 
 - IS-A: Dog is an Animal.
