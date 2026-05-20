@@ -21,22 +21,24 @@
 // Delete is O(logn)
 // Max Min O(1)
 
-#include<vector>
-#include<queue>
+#include <vector>
+#include <queue>
 using namespace std;
 
-int findKthLargest(vector<int>& nums, int k){
-    priority_queue<int , vector<int>, greater<int>> minHeap;
+int findKthLargest(vector<int> &nums, int k)
+{
+    priority_queue<int, vector<int>, greater<int>> minHeap;
 
-    for(int n:nums){
-        minHeap.push(num);
-        if(minHeap.size()>k)
-        minHeap.pop();
+    for (int n : nums)
+    {
+        minHeap.push(n);
+        if (minHeap.size() > k)
+            minHeap.pop();
     }
 
     vector<int> result;
 
-    while(!minHeap.empty())
+    while (!minHeap.empty())
     {
         result.push_back(minHeap.top());
         minHeap.pop();
