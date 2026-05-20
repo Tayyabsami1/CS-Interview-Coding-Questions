@@ -1,0 +1,4 @@
+- Denormalization is the concept of combining tables to reduce the number of joins and improve query performance.
+- Concurrency vs Parallelism:
+  - Concurrency refers to the ability of a system to handle multiple tasks at the same time, while parallelism refers to the ability of a system to execute multiple tasks simultaneously.
+  - Concurrency is achieved through techniques such as multitasking and multithreading, while parallelism is achieved through techniques such as multiprocessing and distributed computing.
