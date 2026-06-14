@@ -3,8 +3,6 @@ function twoSum(nums, target) {
 
   for (let i = 0; i < nums.length; i++) {
     const rem = target - nums[i];
-    // console.log(map);
-    // console.log(map.has(rem));
     if (map.has(rem)) {
       return [map.get(rem), i];
     }
