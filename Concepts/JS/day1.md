@@ -14,7 +14,16 @@
   - Call stack executes syncronous code.
     -Completed Async Callbacks are put in the Callback Queue.
 
-## Prmises
+## Promises
 
 - Promise.all() is used to run multiple promises in parallel and wait for all of them to resolve before proceeding. If one of the promises rejects, the entire Promise.all() will reject
   -Promise.race() is used to run multiple promises in parallel and proceeds as soon as the first promise resolves or rejects
+
+  ## Scopes
+- Global , function , block , lexical 
+- var leaks out of block scope but respects function scope 
+- Illegal shadowing is if we declare a let in global scope and then define a var in the block scope.
+
+## var let const 
+- const variable is immutable
+- const object is mutable
