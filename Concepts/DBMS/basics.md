@@ -13,6 +13,8 @@
 
 ## Views
 
+- A saved SELECT query that behaves like a table, but does not store data physically.
+
 ## Stored Procedures
 
 ## Normalization
@@ -27,9 +29,15 @@
 
 - Data structure that improves the speed of data retrieval operations on a database table.
 - DB maintains a seperate data structure (like B-tree) to allow fast lookups based on the indexed column(s).
-- Clustered Index: determines the physical order of data in the table. Only one clustered index per table.
+
+### Clustered Index:
+
+- determines the physical order of data in the table. Only one clustered index per table.
 - No extra storage is needed for clustered index as it is the actual data.
-- Non-clustered Index: does not affect the physical order of data. Multiple non-clustered indexes can exist on a table.
+
+### Non-clustered Index:
+
+- does not affect the physical order of data. Multiple non-clustered indexes can exist on a table.
 - Increases read performance. Like Select and join operations.
 - Can slow down write operations (Insert, Update, Delete) due to the need to update the index.
 
