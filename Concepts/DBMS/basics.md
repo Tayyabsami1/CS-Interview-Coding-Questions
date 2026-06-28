@@ -25,6 +25,8 @@
 - 3NF : 2 NF + no transitive dependency. Non-key attributes must not depend on other non-key attributes.
 - 4NF: 3 NF + no multi-valued dependency. A table should not have multi-valued dependencies.
 
+### Example of Normalization:
+
 ## Indexes
 
 - Data structure that improves the speed of data retrieval operations on a database table.
