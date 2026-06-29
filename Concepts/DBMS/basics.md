@@ -9,7 +9,63 @@
 
 ## DDL , DML , DQL , TCL
 
+## Query
+
+### Where
+
+- Filter rows before grouping.
+
+### Group By
+
+- Groups rows to perform aggregate calculations.
+
+### SubQuery and Aggregate Functions
+
+```
+SELECT *
+FROM Employee
+WHERE Salary >
+(
+    SELECT AVG(Salary)
+    FROM Employee
+);
+```
+
+### Having
+
+- Filters groups after aggregation.
+
 ## Joins
+
+### Inner Join
+
+- Returns only matching rows.
+
+```
+SELECT e.Name, d.Department
+FROM Employees e
+INNER JOIN Departments d
+ON e.DeptID = d.DeptID;
+```
+
+### Left Join
+
+- Return all rows from left plus matching rows from the right table
+
+### Right Join
+
+- Return all table from right plus matching rows from the left table
+
+### Full Outer Join
+
+- Return all rows from both tables
+
+```
+SELECT e.Name, d.Department
+FROM Employees e
+FULL OUTER JOIN Departments d
+ON e.DeptID = d.DeptID;
+```
 
 ## Views
 
