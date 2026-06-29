@@ -4,18 +4,32 @@
 
 - Functions improve code reusability and modularity.
 - Modularity means breaking a system into smaller, independent parts (modules).
-- Encapsulation: bind data and methods together and restrict access.
-- Abstraction: hide internal details and expose only functionality.
-- Polymorphism: objects take many forms and can be treated as instances of a parent class.
-  - Compile-time polymorphism: method overloading, operator overloading.
-  - Run-time polymorphism: method overriding in a subclass.
-- Composition: strong "has-a" relationship; contained class is part of the owner's state.
-- Aggregation: weaker "has-a" relationship; contained class can exist independently.
-- Inheritance: a class inherits properties and behaviors from a parent class.
-  - Single inheritance: one parent.
-  - Multiple inheritance: more than one parent.
-  - Multilevel inheritance: parent inherits from another parent.
-  - Hierarchical inheritance: multiple classes inherit from one parent.
+
+## OOP Pillars
+
+### Encapsulation
+
+- bind data and methods together and restrict access.
+
+### Abstraction
+
+- hide internal details and expose only functionality.
+
+### Polymorphism
+
+- objects take many forms and can be treated as instances of a parent class.
+- Compile-time polymorphism: method overloading, operator overloading.
+- Run-time polymorphism: method overriding in a subclass.
+
+### Inheritance
+
+- class inherits properties and behaviors from a parent class.
+- Single inheritance: one parent.
+- Multiple inheritance: more than one parent.
+- Multilevel inheritance: parent inherits from another parent.
+- Hierarchical inheritance: multiple classes inherit from one parent.
+
+### 4 Pillar Examples
 
 - ENCAPSULATION
   → Protects data inside BankAccount (balance, pin are private)
@@ -28,6 +42,14 @@
   ↓
 - POLYMORPHISM
   → processDeposit() works on any account type via base pointer
+
+## Composition
+
+- strong "has-a" relationship; contained class is part of the owner's state.
+
+## Aggregation
+
+- weaker "has-a" relationship; contained class can exist independently.
 
 ## Relationships
 
@@ -42,8 +64,13 @@
 
 ## SOLID Principles
 
-- SRP (Single Responsibility Principle): a class should have only one reason to change.
-- OCP (Open/Closed Principle): open for extension, closed for modification.
+### SRP (Single Responsibility Principle)
+
+-a class should have only one reason to change.
+
+### OCP (Open/Closed Principle)
+
+-open for extension, closed for modification.
 
 ### OCP Example (C++)
 
@@ -75,7 +102,9 @@ public:
 };
 ```
 
-- Liskov Substitution Principle: objects of a superclass should be replaceable with objects of a subclass without affecting correctness.
+### Liskov Substitution Principle
+
+- objects of a superclass should be replaceable with objects of a subclass without affecting correctness.
 
 ```cpp
 class Bird {
@@ -99,7 +128,9 @@ class Ostrich : public Bird {
 
 ```
 
-- ISP (Interface Segregation Principle): clients should not be forced to depend on interfaces they do not use.
+### ISP (Interface Segregation Principle)
+
+- clients should not be forced to depend on interfaces they do not use.
 
 ```cpp
 class IWorkable {
@@ -128,7 +159,9 @@ public:
 
 ```
 
-- DIP (Dependency Inversion Principle): high-level modules should not depend on low-level modules; both should depend on abstractions.
+### DIP (Dependency Inversion Principle)
+
+- high-level modules should not depend on low-level modules; both should depend on abstractions.
 
 ```cpp
 class IDatabase {  // abstraction
