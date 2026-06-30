@@ -8,9 +8,7 @@ function isValidAnagram(s, t) {
     charCount[char] = (charCount[char] || 0) + 1;
   }
   for (let char of t) {
-    if (!charCount[char]) {
-      return false;
-    }
+    if (!charCount[char]) return false;
     charCount[char]--;
   }
   return true;
