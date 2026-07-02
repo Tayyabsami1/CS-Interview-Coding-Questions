@@ -11,8 +11,8 @@ bool isAnagram(string s, string t)
 
     for (int i = 0; i < s.length(); i++)
     {
-        count[s[i] - 'a']++;
-        count[t[i] - 'a']--;
+        count[s[i]]++;
+        count[t[i]]--;
     }
 
     for (int c : count)

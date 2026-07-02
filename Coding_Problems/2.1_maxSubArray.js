@@ -11,9 +11,7 @@ function findSubarray(nums, k) {
       left++;
     }
 
-    if (sum === k) {
-      return nums.slice(left, right + 1);
-    }
+    if (sum === k) return nums.slice(left, right + 1);
   }
 
   return null;
