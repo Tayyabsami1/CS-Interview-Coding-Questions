@@ -6,9 +6,7 @@ function flatten(head) {
     while (node) {
       values.push(node.val);
 
-      if (node.chile) {
-        collect(node.child);
-      }
+      if (node.chile) collect(node.child);
     }
   }
 

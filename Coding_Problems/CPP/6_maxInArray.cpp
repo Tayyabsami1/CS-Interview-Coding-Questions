@@ -10,9 +10,8 @@ int findMax(vector<int>& nums)
     for (int i = 1; i < nums.size(); i++)
     {
         if (nums[i] > maxNum)
-        {
             maxNum = nums[i];
-        }
+        
     }
 
     return maxNum;

@@ -16,8 +16,7 @@ bool isValid(string s)
 
     for (char ch : s)
     {
-        if (ch == '(' || ch == '{' || ch == '[')
-        
+        if (ch == '(' || ch == '{' || ch == '[') 
             st.push(ch);
         
         else
