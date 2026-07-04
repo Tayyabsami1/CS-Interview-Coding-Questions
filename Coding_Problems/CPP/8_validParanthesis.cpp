@@ -8,17 +8,16 @@ bool isValid(string s)
 {
     stack<char> st;
 
-    unordered_map<char, char> map = {
-        {')', '('},
-        {'}', '{'},
-        {']', '['}
-    };
+    unordered_map<char, char> map;
+    map[')'] = '(';
+    map['}'] = '{';
+    map[']'] = '[';
 
     for (char ch : s)
     {
-        if (ch == '(' || ch == '{' || ch == '[') 
+        if (ch == '(' || ch == '{' || ch == '[')
             st.push(ch);
-        
+
         else
         {
             if (st.empty() || st.top() != map[ch])

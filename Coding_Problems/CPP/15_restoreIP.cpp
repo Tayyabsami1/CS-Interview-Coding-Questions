@@ -7,7 +7,7 @@ using namespace std;
 const int MAX_IP_PARTS = 4;
 const int MAX_IP_VALUE = 255;
 
-void backTrack(string& s, int index, vector<string>& parts, vector<string>& result)
+void backTrack(string &s, int index, vector<string> &parts, vector<string> &result)
 {
     if (parts.size() == MAX_IP_PARTS)
     {
@@ -45,9 +45,9 @@ vector<string> restoreIpAddress(string s)
 
 int main()
 {
-    vector<string> result = restoreIpAddress("25525511135");
+    vector<string> result = restoreIpAddress("255232");
 
-    for (const string& ip : result)
+    for (const string &ip : result)
         cout << ip << endl;
 
     return 0;

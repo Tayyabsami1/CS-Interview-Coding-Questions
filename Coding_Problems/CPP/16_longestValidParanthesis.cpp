@@ -14,9 +14,8 @@ int findIsValidParanthesis(string s)
     for (int i = 0; i < (int)s.length(); i++)
     {
         if (s[i] == '(')
-        {
             st.push(i);
-        }
+
         else
         {
             st.pop();

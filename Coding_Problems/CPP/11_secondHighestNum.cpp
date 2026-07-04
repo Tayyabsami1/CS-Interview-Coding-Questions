@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include <limits>
+#include <climits>
 
 using namespace std;
 
-int findSecondHighestNumber(vector<int>& arr)
+int findSecondHighestNumber(vector<int> &arr)
 {
-    int first = numeric_limits<int>::min();
-    int second = numeric_limits<int>::min();
+    int first = INT_MIN;
+    int second = INT_MIN;
 
     for (int n : arr)
     {
@@ -17,17 +17,15 @@ int findSecondHighestNumber(vector<int>& arr)
             first = n;
         }
         else if (n > second && n != first)
-        {
             second = n;
-        }
     }
 
-    return second == numeric_limits<int>::min() ? -1 : second;
+    return second == INT_MIN ? -1 : second;
 }
 
 int main()
 {
-    vector<int> arr = {3, 1, 4, 1, 5, 9, 2, 6};
+    vector<int> arr = {3, 1, 4, 1, 5, 6, 2, 6};
 
     cout << findSecondHighestNumber(arr);
 
