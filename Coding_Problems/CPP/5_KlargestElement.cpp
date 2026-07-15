@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int findKthLargest(vector<int>& nums, int k)
+int findKthLargest(vector<int> &nums, int k)
 {
     priority_queue<int, vector<int>, greater<int>> minHeap;
 
@@ -21,7 +21,7 @@ int findKthLargest(vector<int>& nums, int k)
 
 int main()
 {
-    vector<int> nums = {3,2,1,5,6,4};
+    vector<int> nums = {3, 2, 1, 5, 6, 4};
 
     cout << findKthLargest(nums, 2);
 
