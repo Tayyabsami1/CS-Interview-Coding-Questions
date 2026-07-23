@@ -1,0 +1,9 @@
+- Node.js is a JavaScript runtime built on Chrome's V8 JavaScript Engine that allows JavaScript to run outside the browser.
+- It is a runtime environment
+- Request -> NodeJS -. Event Loop -> Worker Threads -> Database -> Callback Queue -> Response
+- Event Loop Phases
+  - Timers -> Pending Callbacks -> Idle /Prepare -> Poll -> Check -> Close Callback
+- V8 Engine Parses JavaScript , Compiles to machine code (JIT compilation),Executes code,Performs garbage collection
+- CommonJS vs ES Modules , require vs import
+- Buffer store binary data like images , videos ect
+- Stream instead of loading 2gb file you load it chunk by chunk
