@@ -7,3 +7,25 @@
 
 - Uncontrolled Components: DOM controls the value. You reach into the DOM to get it when you need it.
 - Advance Component React Hook form uses uncontrolled component under the hood but gives you the DX of controlled.
+
+### Difference between npm run dev and npm run build
+
+- When you run locally: npm run dev
+- Vite (or CRA/Next.js dev server) does things like:
+  - Hot Module Replacement
+  - Source maps
+  - Error overlays
+  - File watching
+  - Automatic recompilation
+
+- When you run: npm run build
+- which produces something like:
+  dist/
+  │
+  ├── index.html
+  ├── assets/
+  │ ├── main.js
+  │ ├── vendor.js
+  │ └── styles.css
+
+- These are just static files.
