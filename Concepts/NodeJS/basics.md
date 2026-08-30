@@ -7,3 +7,13 @@
 - CommonJS vs ES Modules , require vs import
 - Buffer store binary data like images , videos ect
 - Stream instead of loading 2gb file you load it chunk by chunk
+
+## Middleware
+
+- Middleware is a function that sits in the middle of the request-response cycle and can modify the request or response objects, or terminate the request-response cycle.
+- It has following types:
+  - Application-level middleware
+  - Router-level middleware
+  - Error-handling middleware
+  - Built-in middleware
+  - Third-party middleware

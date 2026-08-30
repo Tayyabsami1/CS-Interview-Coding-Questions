@@ -29,3 +29,54 @@
   │ └── styles.css
 
 - These are just static files.
+
+## Component Re render rules
+
+- State change
+- Props change
+- Context change (e.g. theme, language)
+- Parent re-render
+
+## State in React
+
+-State in React is the data associated with an instance of a component. It persists across re-renders and when updated through react state mechanism causes a component to re render.
+
+- State is stored in React Internal data structure know as React Fibers.
+
+- Conceptually
+
+```
+  Fiber
+  ├── component type
+  ├── props
+  ├── state/hooks
+  ├── parent
+  ├── child
+  ├── sibling
+  └── other bookkeeping
+```
+
+- React State batching behavior: React batches state updates for performance reasons. When multiple state updates occur in a single event loop, React groups them together and performs a single re-render instead of multiple re-renders.
+
+## useEffect Hook
+
+- It is used to perform side effects.
+- It runs after the render is committed to the screen.
+
+## useLayoutEffect Hook
+
+- It is similar to useEffect but it fires before the browser has a change to paint.
+
+## useRef Hook
+
+- Two use cases:
+  - To access a DOM element directly
+  - To persist a value across renders without causing a re-render
+
+## useMemo Hook
+
+- It is used to memoize expensive calculations and avoid unnecessary recalculations on every render.
+
+## useCallback Hook
+
+- It is used to memoize functions and avoid unnecessary re-creations of functions on every render.
