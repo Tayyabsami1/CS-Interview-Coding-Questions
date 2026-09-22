@@ -24,6 +24,7 @@
 ### Repeatable Read:
 
 - Transactions can read the same data multiple times and get the same result. Problem Phantom Read
+  - Phantom read is where in a transaction a same query when executed twice return seperate amount of rows.
 
 ### Serializable:
 
